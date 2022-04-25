@@ -1,3 +1,14 @@
+/*********************************************************************
+** Program Filename: style.css
+** Author: Aaron Boothe
+** Date: 4/24/2022
+** Description: Style sheet for the CS-361 Dam News product.
+*********************************************************************/
+
+/*
+ *  Header/body section
+*/
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
@@ -18,7 +29,6 @@ header {
   align-items: center;
   position: relative;
   box-shadow: 0px 0px 1px black;
-
 }
 
 header h1 {
@@ -44,98 +54,11 @@ main button {
   margin: auto;
 }
 
-#gallery-button {
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 100px;
-  height: 30px;
-}
-
-#index-button {
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 100px;
-  height: 30px;
-}
-
-.room-code-input-container {
-  margin-bottom: 10px;
-  display: block;
-  text-align: center;
-}
-
-.interior-box {
-  background-color: rgba(0, 0, 0, 0.9) ;
-  color: white;
-}
-
-.interior-box input {
-  display: block;
-  margin: auto;
-}
-
-.interior-box select {
-  display: block;
-  margin: auto;
-}
-
-.player-name-input-container {
-  margin-bottom: 10px;
-  display: block;
-  text-align: center;
-}
-
-.interior-box {
-  outline: 2px solid black;
-  width: 300px;
-  margin: auto;
-  margin-top: 100px;
-  padding: 20px;
-  border-radius: 25px;
-}
-
-.error-container h2{
-  text-align: center;
-}
-
-.error-container h3{
-  text-align: center;
-}
-
-#galleryPosts {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.post {
-  display: inline-block;
-  vertical-align: top;
-  /*height: 300px;*/
-  height:  100%;
-  width: 335px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-  /*border-radius: 3px;*/
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  word-spacing: 3px;
-}
-
-.post-title {
-  font-weight: bolder;
-  text-decoration: underline;
-}
-
-.post p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*
+ *  Left-side navigation tabs
+*/
 
 #tabs-section {
-  /*position: relative;*/
   float: left;
   width: 75px;
   text-align: center;
@@ -145,27 +68,26 @@ main button {
   border: 1px solid black;
 }
 
-#lobby-container {
-  /* background: #ffffff87; */
-  background: #000;
-  color: white;
-  border-radius: 25px;
-  padding: 5px;
-  margin: 25px 33% 25%;
-  text-align: center;
-}
+/*
+ *  Feed section
+*/
 
 #feed-container {
   text-align: center;
-  /*position: relative;*/
- /* top: -220px;
-  float: left;*/
 }
 
 #feed-name-display-container {
   text-decoration: underline;
   font-size: 25px;
 }
+
+#feed-name-description {
+  font-size: 14px;
+}
+
+/*
+ *  Search section
+*/
 
 #search-container {
   text-align: center;
@@ -176,15 +98,20 @@ main button {
   font-size: 25px;
 }
 
+/*
+ *  Search results section
+*/
+
 #results-display {
   text-decoration: underline;
   font-size: 25px;
 }
 
-
+/*
+ *  Articles section
+*/
 
 #article-display-container {
-  /* background: #ffffff87; */
   background: #ffffff;
   border-width: 1px;
   color: black;
@@ -194,33 +121,24 @@ main button {
   text-align: center;
 }
 
- #example-img {
-  /*object-fit: cover;  */
+#article-img-container{
+  width: 100px;
+ height: 100px;
+}
+
+#example-img {
   width: 100px;
  height: 100%;
  float: left; 
 }
 
+/*
+ *  Back arrow navigation
+*/
+
 #back-arrow-img {
   width: 100px;
  height: 100%;
- 
-}
-
-#feed-name-title {
-  
-  /*float: right; */
-}
-
-#feed-name-description {
-  font-size: 14px;
-  /*float: right; */
-}
-
-#article-img-container{
-  /*object-fit: cover;  */
-  width: 100px;
- height: 100px;
 }
 
 #next-input-button {
@@ -233,7 +151,3 @@ main button {
   width: 80px;
   border-radius: 3px;
 }
-
-#player-name-display-container {
-  word-spacing: 10px;
-  }
