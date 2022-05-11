@@ -13,6 +13,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./article.js" charset="utf-8" defer></script>
     <!-- <script src="/lobby.js" charset="utf-8" defer></script>
     <script src="/phrasals.js" charset="utf-8"></script> -->
   </head>
@@ -27,10 +28,6 @@
       <a href="./home.html">
       <h1 class="site-title">Dam News</h1>
       </a>
-
-    </header>
-
-    <main>
 
       <div id="tabs-section">
         
@@ -54,6 +51,32 @@
 
       </div>
 
+    </header>
+
+    <main>
+
+      <!-- <div id="tabs-section">
+        
+        <a href="./home.html">
+        <div id="tab-container">
+          <h3 id="home-tab">Home</h3>
+        </div>
+        </a>
+
+        <a href="./search.html">
+        <div id="tab-container">
+          <h3 id="home-tab">Search</h3>
+        </div>
+        </a>
+
+        <a href="./help.html">
+        <div id="tab-container">
+          <h3 id="home-tab">Help</h3>
+        </div>
+        </a>
+
+      </div> -->
+
       <div id="feed-container">
 
         <div id="feed-name-display-container">
@@ -65,23 +88,28 @@
           <div class="article-img-container">
             <img id="example-img" src="./ex1.webp">
           </div>
-          
-          <h3 id="feed-name-title">Title: Netflix is cracking down on password-sharing. Will it work?</h3>
-          <h3 id="feed-name-author">Author: Molly Callahan</h3>
-          <h3 id="feed-name-organization">Organization: Northeastern University</h3>
 
-          <div id="more-details-container">
-            <button type="button">More Details</button>
+          <div id="details-container">
+            <h3 class="left" id="feed-name-title">Title:</h3> <p class="right">Netflix is cracking down on password-sharing. Will it work?</p>
+            <h3 class="left" id="feed-name-author">Author:</h3> <p class="right">Molly Callahan</p>
+            <h3 class="left" id="feed-name-organization">Organization:</h3> <p class="right">Northeastern University</p>
           </div>
 
-          <h3 id="feed-name-data">Data Published: April 21, 2022</h3>
-          <h3 id="feed-name-tags">Tags: Business, D'Amore-McKim School of Business, Marketing, Netflix, Yakov Bart</h3>
+          <div id="more-details-container">
+            <button type="button" class="collapsible">More Details</button>
+              <div class="content">
+
+                <h3 id="feed-name-data">Data Published:</h3> <p>April 21, 2022</p>
+                <h3 id="feed-name-tags">Tags:</h3> <p>Business, D'Amore-McKim School of Business, Marketing, Netflix, Yakov Bart</p>
+                
+                <h3 id="feed-name-source">Source URL:</h3> <p>
+                  <a href="https://news.northeastern.edu/2022/04/21/netflix-password-sharing/"> 
+                  https://news.northeastern.edu/2022/04/21/netflix-password-sharing/</a>
+                </p>
+
+              </div>
           
-          <h3 id="feed-name-source">Source URL: 
-            <a href="https://news.northeastern.edu/2022/04/21/netflix-password-sharing/"> 
-            https://news.northeastern.edu/2022/04/21/netflix-password-sharing/</a>
-          </h3>
-          
+          </div>
 
           <h2 id="feed-name-description"> 
             <p>For the first time in a decade, Netflix announced that it lost more subscribers than it signed up, a decline that 
@@ -103,12 +131,14 @@
 
       </div>
 
-      <a href="./home.html">
+      
       <div class="go-back-arrow">
+        <a href="./home.html">
         <!-- https://www.dreamstime.com/stock-photos-angry-beaver-image18078573 -->
         <img id="back-arrow-img" src="./pngwing.com.png">
+        </a>
       </div>
-      </a>
+      
 
         
 

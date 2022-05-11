@@ -59,13 +59,16 @@ main button {
 */
 
 #tabs-section {
-  float: left;
+  display: flex;
+  margin-left: 800px;
+  /*float: right;
   width: 75px;
-  text-align: center;
+  text-align: center;*/
 }
 
 #tab-container {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  margin: 0px 40px 0px 0px;
 }
 
 /*
@@ -132,6 +135,18 @@ main button {
  float: left; 
 }
 
+/*h3, p{ display:inline; vertical-align:middle;}*/
+
+/*h3.left {
+  float: left;
+  text-align: center;
+}
+
+p.right {
+  float: right;
+  text-align: center;
+}*/
+
 /*
  *  Back arrow navigation
 */
@@ -151,3 +166,69 @@ main button {
   width: 80px;
   border-radius: 3px;
 }
+
+/*
+ *  Collapsibles
+*/
+.collapsible {
+  background-color: #ddd;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18.72px;
+  border-radius: 25px;
+  /*border-radius: 25px;*/
+}
+
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #eee;
+  border-radius: 25px;
+}
+
+/*
+ *  Collapsibles - Help page
+*/
+#feed-name-title.collapsible {
+  font-weight: 700;
+}
+
+/*
+ *  Collapsibles - Search page
+*/
+
+.collapsibleSearch {
+  cursor: pointer;
+  /*background-color: #ddd;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18.72px;
+  border-radius: 25px;*/
+}
+
+.collapsibleSearch:hover {
+  background-color: #ccc;
+}
+
+.contentSearch {
+  /*padding: 0 18px;*/
+  display: none;
+  overflow: hidden;
+  /*background-color: #eee;*/
+  /*border-radius: 25px;*/
+}
+
+/*#article-display-container.content {
+  border-radius: 50px;
+}*/

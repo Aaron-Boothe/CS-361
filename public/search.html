@@ -29,10 +29,6 @@
       <h1 class="site-title">Dam News</h1>
       </a>
 
-    </header>
-
-    <main>
-
       <div id="tabs-section">
         
         <a href="./home.html">
@@ -54,6 +50,32 @@
         </a>
 
       </div>
+
+    </header>
+
+    <main>
+
+      <!-- <div id="tabs-section">
+        
+        <a href="./home.html">
+        <div id="tab-container">
+          <h3 id="home-tab">Home</h3>
+        </div>
+        </a>
+
+        <a href="./search.html">
+        <div id="tab-container">
+          <h3 id="home-tab">Search</h3>
+        </div>
+        </a>
+
+        <a href="./help.html">
+        <div id="tab-container">
+          <h3 id="home-tab">Help</h3>
+        </div>
+        </a>
+
+      </div> -->
 
       <div id="search-container">
 
@@ -77,7 +99,14 @@
         </div>
 
         <div id="search-adv-search-container">
-          <button type="button">Advanced Search</button>
+          <button type="button" class="collapsibleSearch">Advanced Search</button>
+          <div class="contentSearch">
+            <h3 id="tags-name-display">Tag(s):</h3>
+            <input type="text" id="tags" name="tags"><br><br>
+
+            <h3 id="date-name-display">Date:</h3>
+            <input type="text" id="date" name="date"><br><br>
+          </div>
         </div>
 
         <div id="search-clear-container">
